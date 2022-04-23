@@ -1,30 +1,26 @@
 <script>
-	export let name;
+ import {
+	 Route,
+	 router
+ } from 'tinro';
+
+ router.subscribe(_ => window.scrollTo(0,0));
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+ .cereus-nav {
+     background: #4DB6AC;
+ }
 </style>
+
+
+<nav class="border-bottom cereus-nav">
+    <div class="container d-flex flex-wrap justify-content-end">
+      <ul class="nav">
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2">Downloads</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-light px-2">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
