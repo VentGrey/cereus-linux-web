@@ -14,7 +14,7 @@
       <img src="/images/logo.png" class="bi me-2" width="40" height="40"/>
     </a>
 
-    <p class="nav col-md-4 text-light justify-content-end fw-bold">
-        Page Created & Designed by ItzSelenux + VentGrey
+    <p class="col-md-4 text-light justify-content-end fw-bold">
+      Page Created & Designed by ItzSelenux
     </p>
   </footer>
