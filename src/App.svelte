@@ -66,17 +66,11 @@
 </script>
 
 <style>
- ul {
-     list-style:none;
- }
+ ul { list-style:none; }
 
- .cereus-nav {
-     background: #4DB6AC;
- }
+ .cereus-nav { background: #4DB6AC; }
 
- .cereus-link:hover {
-     background-color: #00766b;
- }
+ .cereus-link:hover { background-color: #00766b; }
 
  .nav li ul {
      display:none; position:absolute; min-width:120px;
@@ -84,7 +78,6 @@
 
  .nav li:hover > ul {
      background-color: #4DB6AC;
-;
      display:block;
  }
 </style>

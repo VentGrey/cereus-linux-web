@@ -46,7 +46,7 @@
 <section class="container text-white my-2">
     <center>
         <a href="index.html"><img width="33%" src="/images/textlogo.png"></a>
-        <a href="index.html"><img width="11%" src="/images/logo.png"></a>
+        <a href="index.html"><img width="11%" class="cereus-spin" src="/images/logo.png"></a>
         <h1>Download Cereus Linux</h1>
         <br />
         <h2>Cereus Linux has 4 available editions:</h2>

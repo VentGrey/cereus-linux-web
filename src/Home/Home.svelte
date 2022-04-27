@@ -36,13 +36,6 @@
  .cereus-text {
      color: #4DB6AC;
  }
-
- .cereus-spin {
-     transition: transform .9s ease-in-out;
- }
- .cereus-spin:hover {
-     transform: rotate(360deg);
- }
 </style>
 
 <section class="container my-2">

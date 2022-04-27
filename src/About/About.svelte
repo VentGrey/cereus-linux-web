@@ -18,15 +18,6 @@
  ]
 </script>
 
-<style>
- .cereus-spin {
-     transition: transform .9s ease-in-out;
- }
- .cereus-spin:hover {
-     transform: rotate(360deg);
- }
-</style>
-
 <section class="container my-2">
     <center>
         <a href="https://sourceforge.net/projects/cereus-linux/" target="_blank" rel="noopener noreferrer"><img width="33%" src="/images/textlogo.png"></a>

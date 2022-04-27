@@ -1,8 +1,4 @@
-html, body {
-	width: auto;
-	height: auto;
-}
-
-body {
-	background: #0f0f0f !important;
-}
+html, body { width: auto; height: auto; }
+body { background: #0f0f0f !important; }
+.cereus-spin { transition: transform .9s ease-in-out; }
+.cereus-spin:hover { transform: rotate(360deg); }
