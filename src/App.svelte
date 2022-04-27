@@ -7,7 +7,9 @@
 
  // page imports
  import Home from './Home/Home.svelte';
+ import Downloads from './Downloads/Downloads.svelte';
  import About from './About/About.svelte';
+
 
  // component imports
  import Footer from './Footer.svelte';
@@ -46,7 +48,7 @@
       <ul class="nav">
         <li class="nav-item"><a href="/" class="nav-link cereus-link link-light px-2">Home</a></li>
         <li class="nav-item">
-            <a href="/" class="nav-link cereus-link link-light px-2">Downloads</a>
+            <a href="/downloads" class="nav-link cereus-link link-light px-2">Downloads</a>
             <ul>
                 <li><a class="text-light text-decoration-none" href="/lxqt">Lxqt</a></li>
                 <li><a class="text-light text-decoration-none" href="/xfce">Xfce</a></li>
@@ -62,6 +64,10 @@
 
 <Route path="/">
     <Home/>
+</Route>
+
+<Route path="/downloads">
+    <Downloads/>
 </Route>
 
 <Route path="/about">
