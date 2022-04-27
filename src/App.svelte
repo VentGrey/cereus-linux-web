@@ -12,14 +12,61 @@
 
 
  // component imports
+ import Edition from './Home/Edition.svelte';
  import Footer from './Footer.svelte';
 
  // Go to page top when navigating to a new page
  router.subscribe(_ => window.scrollTo(0,0));
+
+// Define edition objects here
+ const lxqt = {
+     "icon": "/images/lxqt-logo.png",
+     "photo": "/images/lxqt.png",
+     "name": "Cereus LxQt",
+     "int_link": "/lxqt",
+     "description": "LxQt is a lightweight environment that runs on low-resources",
+     "dl_link": "https://sourceforge.net/projects/cereus-linux/",
+     "arch": "i686 y amd64",
+     "is_testing": true
+ };
+
+ const xfce = {
+     "icon": "/images/xfce-logo.png",
+     "photo": "/images/xfce.png",
+     "name": "Cereus Xfce",
+     "int_link": "/xfce",
+     "description": "Xfce is a lightweight environment that runs on low-resources PCs, different to LxQt, Xfce is more personalizable",
+     "dl_link": "",
+     "arch": "i686 y amd64",
+     "is_testing": false
+ };
+
+ const plasma = {
+     "icon": "/images/plasma-logo.png",
+     "photo": "/images/plasma.png",
+     "name": "Cereus Plasma",
+     "int_link": "/plasma",
+     "description": "plasma is a modern and highly personalizable environment",
+     "dl_link": "",
+     "arch": "amd64",
+     "is_testing": false
+ };
+
+ const cinnamon = {
+     "icon": "/images/cinnamon-logo.png",
+     "photo": "/images/cinnamon.png",
+     "name": "Cereus Cinnamon",
+     "int_link": "/cinnamon",
+     "description": "Cinnamon is a modern and Familiar environment",
+     "dl_link": "",
+     "arch": "amd64",
+     "is_testing": false
+ }
+ 
 </script>
 
 <style>
- ul, ol {
+ ul {
      list-style:none;
  }
 
@@ -68,6 +115,22 @@
 
 <Route path="/downloads">
     <Downloads/>
+</Route>
+
+<Route path="/lxqt">
+    <Edition {...lxqt}/>
+</Route>
+
+<Route path="/xfce">
+    <Edition {...xfce}/>
+</Route>
+
+<Route path="/plasma">
+    <Edition {...plasma}/>
+</Route>
+
+<Route path="/cinnamon">
+    <Edition {...cinnamon}/>
 </Route>
 
 <Route path="/about">
